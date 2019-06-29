@@ -1,4 +1,12 @@
 .myFont{
     font-size: 12px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,"Segoe UI";
+}
+.navbar{
+  width: 100%;
+}
+.myFontLabel{
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,"Segoe UI";
 }

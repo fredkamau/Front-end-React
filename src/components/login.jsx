@@ -33,12 +33,7 @@ class Login extends Component {
           />
           <button class="btn btn-lg btn-primary btn-block" type="submit">
             Sign in
-          </button>
-          <footer class="footer mt-3 py-3">
-            <div class="container">
-              <span>Mawingu &copy; 2019</span>
-            </div>
-          </footer>
+          </button>        
         </form>
       </div>
     );

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ReactTable from "react-table";
 import { Route } from "react-router-dom";
 import "react-table/react-table.css";
-import "../assets/css/Tasks.css";
+import "../assets/css/styles.css";
 class TasksTable extends Component {
   constructor(props) {
     super(props);

@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import mawingu from "../assets/images/mawingu.png";
+import "../assets/css/styles.css"
 class Navigation extends Component {
   state = {};
   render() {
     return (
+      <div className="navbar">
       <Navbar bg="light" expand="lg">
         <Navbar.Brand href="#home">
           <img src={mawingu} style={{ width: 100, marginTop: -7 }} />
@@ -12,22 +14,19 @@ class Navigation extends Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link>Home</Nav.Link>
-            <Nav.Link>Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
+            <Nav.Link>Customers</Nav.Link>
+            <Nav.Link>Tasks</Nav.Link>
+            <Nav.Link>Personnel</Nav.Link>
+            <NavDropdown title="Fred" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Change Password</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">           
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Log Out</NavDropdown.Item>             
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+      </div>
     );
   }
 }
