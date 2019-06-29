@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "../assets/css/login.css";
-import "../assets/css/spacing.css";
 import mawingu from "../assets/images/mawingu.png";
 
 class Login extends Component {
@@ -37,7 +36,7 @@ class Login extends Component {
           </button>
           <footer class="footer mt-3 py-3">
             <div class="container">
-              <span class="text-muted">Mawingu &copy; 2019</span>
+              <span>Mawingu &copy; 2019</span>
             </div>
           </footer>
         </form>
