@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { Bar, Line, Pie } from "react-chartjs-2";
+import {Pie } from "react-chartjs-2";
 import "../assets/css/styles.css";
-class DailyTragets extends Component {
+class DailyTargetsChart extends Component {
   constructor(props) {
     super(props);
     //put chart data in our state when it comes in as a property
@@ -55,4 +55,4 @@ class DailyTragets extends Component {
   }
 }
 
-export default DailyTragets;
+export default DailyTargetsChart;

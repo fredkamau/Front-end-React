@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import ReactTable from "react-table";
 import { Route } from "react-router-dom";
-import { Navigation } from "../components/Layouts/NavComponent";
 import "react-table/react-table.css";
 import "../assets/css/Tasks.css";
-class Tasks extends Component {
+class TasksTable extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -76,4 +75,4 @@ class Tasks extends Component {
   }
 }
 
-export default Tasks;
+export default TasksTable;
