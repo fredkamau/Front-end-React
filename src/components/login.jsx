@@ -8,7 +8,7 @@ class Login extends Component {
     return (
       <div className="center-login">
         <form className="form-signin">
-          <h3 className="h3 mb-3 font-weight-normal ">Admin Login</h3>
+          <h3 className="h3 mb-3 font-weight-normal">Admin Login</h3>
           <img className="mb-4 img-rounded" alt="Cinque Terre" src={mawingu} />
           <label for="inputEmail" className="sr-only">
             Email address

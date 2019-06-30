@@ -59,7 +59,6 @@ class TasksTable extends Component {
       }
     ];
     return (
- 
             <ReactTable
               columns={columns}
               data={this.state.posts}
