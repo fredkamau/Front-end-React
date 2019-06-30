@@ -9,7 +9,7 @@ class Login extends Component {
       <div className="center-login">
         <form className="form-signin">
           <h3 className="h3 mb-3 font-weight-normal">Admin Login</h3>
-          <img className="mb-4 img-rounded" alt="Cinque Terre" src={mawingu} />
+          <img className="mb-4 img-rounded" alt="Mawingu.png" src={mawingu} />
           <label for="inputEmail" className="sr-only">
             Email address
           </label>

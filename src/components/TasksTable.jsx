@@ -3,6 +3,7 @@ import ReactTable from "react-table";
 import { Route } from "react-router-dom";
 import "react-table/react-table.css";
 import "../assets/css/styles.css";
+import {myCustomNextText, myCustomPreviousText} from "../assets/css/styles.css";
 class TasksTable extends Component {
   constructor(props) {
     super(props);
@@ -59,13 +60,15 @@ class TasksTable extends Component {
       }
     ];
     return (
-            <ReactTable
-              columns={columns}
-              data={this.state.posts}
-              noDataText={"Loading..."}
-              defaultPageSize={5}
-            />
-
+      <div>
+      <ReactTable
+        columns={columns}
+        data={this.state.posts}
+        noDataText={"Loading..."}
+        defaultPageSize={10}
+      />
+      </div>
+     
     );
   }
 }

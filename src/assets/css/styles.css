@@ -2,6 +2,10 @@
   font-size: 12px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "Segoe UI";
 }
+.myLabel {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "Segoe UI";
+}
 .navbar {
   width: 100%;
 }
@@ -18,12 +22,10 @@
 .chart{
     width: 50%;
 }
-.container {
-  width: auto;
-  max-width: 680px;
-  padding: 0 15px;
+myCustomPreviousText{
+  color:blue;
+}
+myCustomNextText{
+  color: blue;
 }
 
-.footer {
-  background-color: #f5f5f5;
-}
