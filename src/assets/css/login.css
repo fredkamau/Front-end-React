@@ -32,7 +32,7 @@ body {
 }
 .center-login {
   width: 320px;
-  height: 350px;
+  height: 360px;
   position: absolute;
   background-color: #f2f2f2;
   left: 50%;
@@ -42,10 +42,25 @@ body {
 }
 .center-login img {
   display: block;
-  width: 140px;
+  width: 120px;
   height: 90px;
   margin: auto;
+  animation: rotation 4s infinite linear;
 }
+@keyframes rotation {
+  0%{
+    transform: rotate(0) translateX(-30px);
+    opacity: 0.5;
+    }
+76%{
+    transform: rotate(0) translateX(10px);
+    opacity: .76;
+    }
+100%{
+    transform: rotate(0) translateX(0px);
+    opacity: 1;
+    }
+  }
 .center-login h1 {
   display: block;
   margin: auto;
@@ -66,5 +81,8 @@ body {
   padding: 0 15px;
   text-align: center;
   vertical-align: middle;
+}
+.chart{
+
 }
 

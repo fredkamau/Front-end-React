@@ -59,18 +59,14 @@ class TasksTable extends Component {
       }
     ];
     return (
-      <div className="container-fluid">
-        <div className="row">
-          <main className="main-content col-lg-12 col-md-12 col-sm-12 p-0">
+ 
             <ReactTable
               columns={columns}
               data={this.state.posts}
               noDataText={"Loading..."}
               defaultPageSize={5}
             />
-          </main>
-        </div>
-      </div>
+
     );
   }
 }

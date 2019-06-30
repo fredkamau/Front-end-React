@@ -30,8 +30,7 @@ class DailyTargetsChart extends Component {
   }
   render() {
     return (
-        <div className="col-lg-4 col-md-4 col-sm-4 p-0">
-        <div className="chart">
+        <div className="main-content col-lg-4 col-md-4 col-sm-4 p-0">
         <Pie data={this.state.chartData} legendPosition="bottom" />
         <div className="row task-status mt-5">
           <div className="col-sm-3 bg-primary text-center">
@@ -51,7 +50,6 @@ class DailyTargetsChart extends Component {
             <div>5</div>
           </div>
         </div>
-         </div>
          </div>
     );
   }
