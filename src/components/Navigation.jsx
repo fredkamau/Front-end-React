@@ -16,7 +16,7 @@ class Navigation extends Component {
       <div className="navbar">
         <Navbar bg="light" expand="lg">
           <Navbar.Brand href="#home">
-            <img src={mawingu} style={{ width: 100, marginTop: -7 }} />
+            <img src={mawingu} style={{ width: 80, marginTop: -7 }} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -24,7 +24,7 @@ class Navigation extends Component {
               <Nav.Link>Customers</Nav.Link>
               <Nav.Link>Tasks</Nav.Link>
               <Nav.Link>Personnel</Nav.Link>
-              <NavDropdown title="Fred" id="basic-nav-dropdown">
+              <NavDropdown title="Fred" id="basic-nav-dropdown" className="navbar-nav navbar-right">
                 <NavDropdown.Item href="#action/3.1">
                   Change Password
                 </NavDropdown.Item>
@@ -32,14 +32,6 @@ class Navigation extends Component {
                 <NavDropdown.Item href="#action/3.3">Log Out</NavDropdown.Item>
               </NavDropdown>
             </Nav>
-            <Form inline>
-              <FormControl
-                type="text"
-                placeholder="Search"
-                className="mr-sm-2"
-              />
-              <Button variant="outline-success">Search</Button>
-            </Form>
           </Navbar.Collapse>
         </Navbar>
       </div>

@@ -18,7 +18,10 @@ class App extends Component {
             exact
             strict
             render={() => {
-              return <Login />;
+              return <div>
+                <Login />
+                <Footer/>
+              </div>;
             }}
           />
           <Route

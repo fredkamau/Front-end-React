@@ -65,7 +65,7 @@ class TasksTable extends Component {
         columns={columns}
         data={this.state.posts}
         noDataText={"Loading..."}
-        defaultPageSize={10}
+        defaultPageSize={6}
       />
       </div>
      

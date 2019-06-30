@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "bootstrap": "^4.3.1",
     "chart.js": "^2.8.0",
     "mdbreact": "^4.17.0",
