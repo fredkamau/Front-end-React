@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import ReactTable from "react-table";
-import { Route } from "react-router-dom";
 import "react-table/react-table.css";
 import "../assets/css/styles.css";
-import {myCustomNextText, myCustomPreviousText} from "../assets/css/styles.css";
 class TasksTable extends Component {
   constructor(props) {
     super(props);
@@ -12,6 +10,8 @@ class TasksTable extends Component {
     };
   }
   componentDidMount() {
+    //test url
+    //cost url = "https://cstonboarding.azurewebsites.net/tasks/assigned?page=1&limit=10&order=created&orderMethod=DESC";
     const url = "https://jsonplaceholder.typicode.com/posts";
     fetch(url, {
       method: "GET"
@@ -61,14 +61,13 @@ class TasksTable extends Component {
     ];
     return (
       <div>
-      <ReactTable
-        columns={columns}
-        data={this.state.posts}
-        noDataText={"Loading..."}
-        defaultPageSize={6}
-      />
+        <ReactTable
+          columns={columns}
+          data={this.state.posts}
+          noDataText={"Loading..."}
+          defaultPageSize={6}
+        />
       </div>
-     
     );
   }
 }

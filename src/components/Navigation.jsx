@@ -21,7 +21,7 @@ class Navigation extends Component {
             </Nav>
           </Navbar.Collapse>
           <Form inline>
-            <Nav.Link>Log Out</Nav.Link>
+          <Link to={'/'} className="nav-link"> Log Out</Link>
           </Form>
         </Navbar>
       </div>

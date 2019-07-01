@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import { footer } from "react-bootstrap";
+import React from "react";
 
 var style = {
   backgroundcolor: '#f5f5f5',

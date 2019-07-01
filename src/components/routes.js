@@ -1,5 +1,5 @@
 import React from "react";
-import { Router, Route, IndexRoute } from "react-router";
+import { Router, Route } from "react-router";
 import Dashboard from "../components/Dashboard";
 import App from "../App";
 export default (
