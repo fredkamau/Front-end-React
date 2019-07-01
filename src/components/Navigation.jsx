@@ -1,12 +1,6 @@
 import React, { Component } from "react";
-import {
-  Nav,
-  Navbar,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button
-} from "react-bootstrap";
+import { Link } from "react-router";
+import { Nav, Navbar, Form } from "react-bootstrap";
 import mawingu from "../assets/images/mawingu.png";
 import "../assets/css/styles.css";
 class Navigation extends Component {
@@ -24,15 +18,11 @@ class Navigation extends Component {
               <Nav.Link>Customers</Nav.Link>
               <Nav.Link>Tasks</Nav.Link>
               <Nav.Link>Personnel</Nav.Link>
-              <NavDropdown title="Fred" id="basic-nav-dropdown" className="navbar-nav navbar-right">
-                <NavDropdown.Item href="#action/3.1">
-                  Change Password
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2" />
-                <NavDropdown.Item href="#action/3.3">Log Out</NavDropdown.Item>
-              </NavDropdown>
             </Nav>
           </Navbar.Collapse>
+          <Form inline>
+            <Nav.Link>Log Out</Nav.Link>
+          </Form>
         </Navbar>
       </div>
     );

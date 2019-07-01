@@ -1,39 +1,67 @@
 import React, { Component } from "react";
 import "../assets/css/login.css";
 import mawingu from "../assets/images/mawingu.png";
+import validateInput from "./Validation";
 
 class Login extends Component {
-  state = {};
+  constructor(props) {
+    super(props);
+    this.state = {
+      phone: "",
+      password: "",
+      errors: {},
+      isLoading: false
+    };
+    this.onChange = this.onChange.bind(this);
+    this.onSubmit = this.onChange.bind(this);
+  }
+  isValid() {}
+
+  onSubmit(e) {
+    e.preventDefault();
+    if (this.isValid()) {
+      //dispath action to server
+    }
+  }
+  onChange(e) {
+    this.setState({ [e.target.name]: e.target.value });
+  }
   render() {
+    //reconstruct variables from state
+    const { errors, phone, password, isLoading } = this.state;
     return (
       <div className="center-login">
-        <form className="form-signin">
+        <form className="form-signin" onSubmit={this.onSubmit}>
           <h3 className="h3 mb-3 font-weight-normal">Admin Login</h3>
           <img className="mb-4 img-rounded" alt="Mawingu.png" src={mawingu} />
-          <label for="inputEmail" className="sr-only">
-            Email address
-          </label>
+          <label className="sr-only">Email address</label>
           <input
-            type="Phone"
+            type="phone"
+            name="phone"
+            value={phone}
             id="inputPhone"
             className="form-control mb-2"
             placeholder="Phone"
-            required
-            autofocus
+            onChange={this.onChange}
+            errors={errors.phone}
           />
-          <label for="inputPassword" className="sr-only">
-            Password
-          </label>
+          <label className="sr-only">Password</label>
           <input
             type="password"
-            id="inputPassword"
+            name="password"
+            value={password}
             className="form-control"
             placeholder="Password"
-            required
+            onChange={this.onChange}
+            errors={errors.password}
           />
-          <button class="btn btn-lg btn-primary btn-block" type="submit">
+          <button
+            className="btn btn-lg btn-primary btn-block"
+            type="submit"
+            disabled={isLoading}
+          >
             Sign in
-          </button>        
+          </button>
         </form>
       </div>
     );
