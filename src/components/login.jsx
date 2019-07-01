@@ -49,7 +49,6 @@ class Login extends Component {
     return (
       <div className="center-login">
         <Link to={"/dashboard"} className="nav-link">
-          {" "}
           Dashboard
         </Link>
         <form className="form-signin" onSubmit={this.onSubmit}>
